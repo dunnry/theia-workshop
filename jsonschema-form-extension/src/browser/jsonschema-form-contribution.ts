@@ -4,7 +4,7 @@ import { CommonMenus } from "@theia/core/lib/browser";
 
 export const JsonschemaFormCommand = {
     id: 'JsonschemaForm.command',
-    label: "Shows a message"
+    label: "Shows a messages"
 };
 
 @injectable()
@@ -16,7 +16,7 @@ export class JsonschemaFormCommandContribution implements CommandContribution {
 
     registerCommands(registry: CommandRegistry): void {
         registry.registerCommand(JsonschemaFormCommand, {
-            execute: () => this.messageService.info('Hello World!')
+            execute: () => this.messageService.info('Hello Ryan!')
         });
     }
 }
